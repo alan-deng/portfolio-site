@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Alan's Portfolio</title>
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="particles.js" defer></script>
-    <script src="app.js" defer></script>
-    
-    <!-- <script crossorigin=“anonymous” src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
-    <script src="app.js" ></script> -->
+    <link rel="stylesheet" href="./style.css" />    
+    <!-- <script defer crossorigin=“anonymous” src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" ></script>
+    <script defer src="./particles.min.js"></script>
+    <script defer>
+      window.onload = function() {
+      Particles.init({
+    selector: '.background'
+  });
+};
+
+    </script> -->
     
   </head>
-  <body id="particles-js">
+  <body>
     <div id='home'>
       <nav class="bg-gray-800 sticky" >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -214,7 +219,6 @@
       </header>
       <main>
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <!-- Replace with your content -->
           <div class="max-w-7xl" id='skills'>
             <div class="mx-auto my-2" >
               <p
@@ -580,9 +584,10 @@
               </form>
             </div>
           </div>
-          <!-- /End replace -->
         </div>
       </main>
     </div>
+    <!-- <canvas class="background"></canvas> -->
+
   </body>
 </html>
