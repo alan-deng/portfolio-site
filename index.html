@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="particles.js" defer></script>
+    <script src="app.js" defer></script>
+    
+    <!-- <script crossorigin=“anonymous” src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
+    <script src="app.js" ></script> -->
+    
+  </head>
+  <body id="particles-js">
+    <div id='home'>
+      <nav class="bg-gray-800 sticky" >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-end h-16">
+            <div class="flex items-center">
+              <div class="block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a
+                    href="#home"
+                    class="
+                      text-gray-300
+                      hover:bg-gray-700 hover:text-white
+                      px-3
+                      py-2
+                      rounded-md
+                      text-sm
+                      font-medium"
+                    >Home</a
+                  >
+
+                  <a
+                    href="#skills"
+                    class="
+                      text-gray-300
+                      hover:bg-gray-700 hover:text-white
+                      px-3
+                      py-2
+                      rounded-md
+                      text-sm
+                      font-medium
+                    "
+                    >Skills</a
+                  >
+
+                  <a
+                    href="#projects"
+                    class="
+                      text-gray-300
+                      hover:bg-gray-700 hover:text-white
+                      px-3
+                      py-2
+                      rounded-md
+                      text-sm
+                      font-medium
+                    "
+                    >Projects</a
+                  >
+
+                  <a
+                    href="#about_me"
+                    class="
+                      text-gray-300
+                      hover:bg-gray-700 hover:text-white
+                      px-3
+                      py-2
+                      rounded-md
+                      text-sm
+                      font-medium
+                    "
+                    >About</a
+                  >
+
+                  <a
+                    href="#contact"
+                    class="
+                      text-gray-300
+                      hover:bg-gray-700 hover:text-white
+                      px-3
+                      py-2
+                      rounded-md
+                      text-sm
+                      font-medium
+                    "
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header class="bg-white shadow">
+        <div class="relative bg-white overflow-hidden">
+          <div class="max-w-7xl mx-auto flex place-content-center">
+            <div
+              class="
+                relative
+                z-10
+                pb-8
+                bg-white
+                sm:pb-16
+                md:pb-20
+                lg:max-w-2xl lg:w-full lg:pb-28
+                xl:pb-32
+              "
+            >
+
+  
+              <main
+                class="
+                  mt-10
+                  mx-auto
+                  max-w-7xl
+                  px-4
+                  sm:mt-12 sm:px-6
+                  md:mt-16
+                  lg:mt-20 lg:px-8
+                  xl:mt-28
+                "
+              >
+                <div class="sm:text-center lg:text-left">
+                  <h1
+                    class="
+                      text-4xl
+                      tracking-tight
+                      font-extrabold
+                      text-gray-900
+                      sm:text-5xl
+                      md:text-6xl
+                    "
+                  >
+                    <span class="block xl:inline">Hi, I'm</span>
+                    <span class="block text-indigo-600 xl:inline">Alan</span>
+                  </h1>
+                  <p
+                    class="
+                      mt-3
+                      text-base text-gray-500
+                      sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto
+                      md:mt-5 md:text-xl
+                      lg:mx-0
+                    "
+                  >
+                    Software Engineer | Automation Enthusiast
+                  </p>
+                  <div
+                    class="
+                      mt-5
+                      sm:mt-8 sm:flex sm:justify-center
+                      lg:justify-start
+                    "
+                  ></div>
+                </div>
+              </main>
+
+          </div>
+          <div class="flex flex-col justify-center">
+            <p
+              class="
+                mt-3
+                text-base text-blue-800
+                sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto
+                md:mt-5 md:text-xl
+                lg:m-2 lg:text-2xl
+              "
+            >
+              30 sec automated tour?
+            </p>
+            <div class="rounded-md shadow">
+              <a
+                href="#"
+                class="
+                  w-full
+                  flex
+                  items-center
+                  justify-center
+                  px-8
+                  py-3
+                  text-base
+                  font-medium
+                  rounded-md
+                  text-white
+                  bg-blue-800
+                  md:py-4 md:text-lg md:px-10
+                  max-w-sm
+                  hover:bg-blue-900
+                  
+                  border-blue-900
+                  border-2
+                "
+              >
+                Yes Please!
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </header>
+      <main>
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <!-- Replace with your content -->
+          <div class="max-w-7xl" id='skills'>
+            <div class="mx-auto my-2" >
+              <p
+                class="
+                  text-center text-indigo-600 text-4xl
+                  tracking-tight
+                  font-bold
+                  sm:text-5xl
+                  md:text-6xl
+                "
+              >
+                Skills
+              </p>
+            </div>
+            <div class="flex flex-wrap justify-center">
+              <div>
+                <img src="./icons/python-144.png"/>
+                <p class="text-center text-gray-500">Python</p>
+              </div>
+              <div>
+                <img src="./icons/javascript-144.png"/>
+                <p class="text-center text-gray-500">Javascript</p>
+              </div>
+              <div>
+                <img src="./icons/html-5-144.png" />
+                <p class="text-center text-gray-500">HTML</p>
+              </div>
+              <div>
+                <img src="./icons/css3-144.png"/>
+                <p class="text-center text-gray-500">CSS</p>
+              </div>
+              <div>
+                <img src="./icons/react-144.png" />
+                <p class="text-center text-gray-500">React</p>
+              </div>
+              <div>
+                <img src="./icons/nodejs-144.png" />
+                <p class="text-center text-gray-500">Express/Node.js</p>
+              </div>
+
+              <div>
+                <img src="./icons/mongodb-144.png"/>
+                <p class="text-center text-gray-500">MongoDb</p>
+              </div>
+              <div>
+                <img src="./icons/postgresql-144.png" />
+                <p class="text-center text-gray-500">PostgreSQL</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="flex justify-center my-4">
+            <div class="max-w-7xl flex flex-col">
+              <div class="mx-auto">
+                <p
+                  class="
+                    text-center text-indigo-600 text-4xl
+                    tracking-tight
+                    font-bold
+                    mb-4
+                    sm:text-5xl
+                    md:text-6xl
+                  "
+                  id='projects'
+                >
+                  Projects
+                </p>
+              </div>
+              <div class="container mx-auto">
+                <div class="grid sm:grid-cols-3 gap-4 grid-cols-2">
+                  <div
+                    id="project_1"
+                    class="
+                      rounded-lg
+                      border-solid border-indigo-500 border-2
+                      bg-indigo-300
+                      p-2
+                      shadow-md
+                    "
+                  >
+                    <h2 class="text-xl md:text-2xl text-center">
+                      Robert's Art (Freelance)
+                    </h2>
+                    <p class="mb-2 text-center">
+                      Express/Node | MongoDb | HTML | CSS | JS
+                    </p>
+
+                    <p>
+                      In Progress - Created an e-commerce site for displaying
+                      and selling client's art. Integrated Stripe
+                    </p>
+                    <div class="flex justify-center space-x-5">
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Live Link</a
+                      >
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    id="project_2"
+                    class="
+                      rounded-lg
+                      border-solid border-indigo-500 border-2
+                      bg-indigo-300
+                      p-2
+                    "
+                  >
+                    <h2 class="text-xl md:text-2xl text-center">
+                      Property Portfolio Manager (Project)
+                    </h2>
+                    <p class="mb-2 text-center">
+                      Express/Node | MongoDb | HTML | CSS | JS
+                    </p>
+
+                    <p>
+                      Words n stuff Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words WordsWords
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words WordsWords
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words
+                    </p>
+                    <div class="flex justify-center space-x-5">
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Live Link</a
+                      >
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    id="project_3"
+                    class="
+                      rounded-lg
+                      border-solid border-indigo-500 border-2
+                      bg-indigo-300
+                      p-2
+                    "
+                  >
+                    <h2 class="text-xl md:text-2xl text-center">
+                      Python ML Project TBD (Project)
+                    </h2>
+                    <p class="mb-2 text-center">Python | Django | HTML | CSS</p>
+
+                    <p>
+                      Words n stuff Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words WordsWords
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words WordsWords
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words
+                    </p>
+                    <div class="flex justify-center space-x-5">
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Live Link</a
+                      >
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    id="project_4"
+                    class="
+                      rounded-lg
+                      border-solid border-indigo-500 border-2
+                      bg-indigo-300
+                      p-2
+                    "
+                  >
+                    <h2 class="text-xl md:text-2xl text-center">Asianation (Pro Bono)</h2>
+                    <p class="mb-2 text-center">HTML | CSS | JS</p>
+
+                    <p>
+                      Words n stuff Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words WordsWords
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words WordsWords
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words Words Words Words Words Words Words
+                      Words Words Words
+                    </p>
+                    <div class="flex justify-center space-x-5">
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Live Link</a
+                      >
+                      <a
+                        class="
+                          shadow-xl
+                          bg-blue-900
+                          rounded-full
+                          px-3
+                          md:px-5
+                          md:py-1
+                          text-xl
+                          text-white
+                          hover:bg-white
+                          hover:text-blue-900
+                          border-blue-900
+                          border-2
+                        "
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id='about_me'>
+            <div class="mx-auto">
+              <p
+                class="
+                  text-center text-indigo-600 text-4xl
+                  tracking-tight
+                  font-bold
+                  sm:text-5xl
+                  md:text-6xl
+                "
+                
+              >
+                About Me
+              </p>
+            </div>
+            <div>
+              <p class='text-center text-2xl md:text-4xl'>Words Words Words Words Words Words Words Words Words Words Words Words Words Words </p>
+            </div>
+          </div>
+          <div id='contact'>
+            <div class="mx-auto">
+              <p
+                class="
+                  text-center text-indigo-600 text-4xl
+                  tracking-tight
+                  font-bold
+                  sm:text-5xl
+                  md:text-6xl
+                "
+                
+              >
+                Contact Me
+              </p>
+            </div>
+            <div class='border-gray-200 border-2 rounded-md p-3'>
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mzbyobrk" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Name Here" required="">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="gee-male@gmail.com" required="">
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="Say something fun!" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+          <!-- /End replace -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
