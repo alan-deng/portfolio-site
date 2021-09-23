@@ -23,8 +23,9 @@ bindNavOnClicks();
 
 //Auto Tour functionality
 const giveTour = () => {
+  // When changing project to highlight, change favProject below, and link to favProject at bottom of giveTour
   const favProject = "project-2";
-  const displayText = document.getElementById("tour-words").firstElementChild;
+  const displayText = document.getElementById("tour-text").firstElementChild;
 
   const changeClass = (elArr, className, action = "remove") => {
     if (action === "add") {
@@ -43,12 +44,12 @@ const giveTour = () => {
       top: 0,
       behavior: "smooth",
     });
-    changeClass(["tour-words", "tour-shadow"], "hidden");
+    changeClass(["tour-text", "tour-shadow"], "hidden");
     changeClass(["hero-text", "tour-shadow", "tour-container"], "z-50", "add");
     displayText.innerHTML =
       "Thanks for joining Alan portfolio tours! I'll be your guide";
 
-    setTimeout(showSkills, 2000);
+    setTimeout(showSkills, 5000);
   };
 
   const showSkills = () => {
@@ -56,7 +57,7 @@ const giveTour = () => {
     changeClass(["hero-text"], "z-50");
     changeClass(["skill-word", "skill-icons"], "z-50", "add");
     displayText.innerHTML = "Here we have skills. So many!";
-    setTimeout(showProjects, 2000);
+    setTimeout(showProjects, 7000);
   };
 
   const showProjects = () => {
@@ -64,7 +65,7 @@ const giveTour = () => {
     changeClass(["skill-word", "skill-icons"], "z-50");
     changeClass(["projects-container"], "z-50", "add");
     displayText.innerHTML = `Some projects I've done. We'll come back to this later`;
-    setTimeout(showAboutAndContact, 2000);
+    setTimeout(showAboutAndContact, 5000);
   };
 
   const showAboutAndContact = () => {
@@ -85,7 +86,7 @@ const giveTour = () => {
     );
     changeClass(["about-text", "email-logo"], "bg-white", "add");
     displayText.innerHTML = `A little summary of myself. Feel free to reach out to me!`;
-    setTimeout(tourWrapup, 2000);
+    setTimeout(tourWrapup, 5000);
   };
 
   const tourWrapup = () => {
@@ -104,8 +105,8 @@ const giveTour = () => {
     );
     changeClass(["about-text", "email-logo"], "bg-white");
     changeClass(["projects-container"], "z-50", "add");
-    displayText.innerHTML = `Back to projects. Each project has links to them at the bottom`;
-    setTimeout(openProject, 2000);
+    displayText.innerHTML = `Back to projects. Each project has a list of skills, and links to the project at the bottom`;
+    setTimeout(openProject, 10000);
   };
 
   const openProject = () => {
@@ -119,10 +120,10 @@ const giveTour = () => {
 
     setTimeout(() => {
       changeClass([favProject, "tour-shadow", "tour-container"], "z-50");
-      changeClass(["tour-words", "tour-shadow"], "hidden", "add");
+      changeClass(["tour-text", "tour-shadow"], "hidden", "add");
       displayText.innerHTML = `Tour not initiated. Click the button!`;
       window.open("https://www.w3schools.com");
-    }, 5000);
+    }, 4000);
   };
 
   initializeTour();
