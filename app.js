@@ -57,7 +57,7 @@ const giveTour = () => {
     changeClass(["hero-text"], "z-50");
     changeClass(["skill-word", "skill-icons"], "z-50", "add");
     displayText.innerHTML = "Here we have skills. So many!";
-    setTimeout(showProjects, 7000);
+    setTimeout(showProjects, 10000);
   };
 
   const showProjects = () => {
@@ -85,8 +85,18 @@ const giveTour = () => {
       "add"
     );
     changeClass(["about-text", "email-logo"], "bg-white", "add");
+    changeClass(
+      ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
+      "text-indigo-600",
+      "add"
+    );
+    changeClass(
+      ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
+      "shadow-md",
+      "add"
+    );
     displayText.innerHTML = `A little summary of myself. Feel free to reach out to me!`;
-    setTimeout(tourWrapup, 5000);
+    setTimeout(tourWrapup, 10000);
   };
 
   const tourWrapup = () => {
@@ -104,6 +114,14 @@ const giveTour = () => {
       "z-50"
     );
     changeClass(["about-text", "email-logo"], "bg-white");
+    changeClass(
+      ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
+      "text-indigo-600"
+    );
+    changeClass(
+      ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
+      "shadow-md"
+    );
     changeClass(["projects-container"], "z-50", "add");
     displayText.innerHTML = `Back to projects. Each project has a list of skills, and links to the project at the bottom`;
     setTimeout(openProject, 10000);
