@@ -21,10 +21,69 @@ const bindNavOnClicks = () => {
 };
 bindNavOnClicks();
 
+const bindNavOnClicks2 = () => {
+  const allButtons = document.querySelectorAll("#nav-buttons-2 li a");
+  for (let i = 0; i < allButtons.length; i++) {
+    let buttonEl = allButtons[i];
+    let elToFind = buttonEl.id.slice(0, buttonEl.id.indexOf("-"));
+    let element = document.getElementById(elToFind);
+    buttonEl.addEventListener("click", () => {
+      document.querySelectorAll(".navbar-close")[0].click();
+      scrollTo({
+        top: offset(element) - headerOffset,
+        behavior: "smooth",
+      });
+    });
+  }
+};
+
+// Burger menus
+document.addEventListener("DOMContentLoaded", function () {
+  // open
+  const burger = document.querySelectorAll(".navbar-burger");
+  const menu = document.querySelectorAll(".navbar-menu");
+
+  if (burger.length && menu.length) {
+    for (var i = 0; i < burger.length; i++) {
+      burger[i].addEventListener("click", function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle("hidden");
+        }
+      });
+    }
+  }
+
+  // close
+  const close = document.querySelectorAll(".navbar-close");
+  const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+  if (close.length) {
+    for (var i = 0; i < close.length; i++) {
+      close[i].addEventListener("click", function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle("hidden");
+        }
+      });
+    }
+  }
+
+  if (backdrop.length) {
+    for (var i = 0; i < backdrop.length; i++) {
+      backdrop[i].addEventListener("click", function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle("hidden");
+        }
+      });
+    }
+  }
+});
+
+bindNavOnClicks2();
+
 //Auto Tour functionality
 const giveTour = () => {
   // When changing project to highlight, change favProject below, and link to favProject at bottom of giveTour
-  const favProject = "project-2";
+  const favProject = "project-roberts-art";
   const displayText = document.getElementById("tour-text");
   let currTimeout;
 
@@ -119,7 +178,11 @@ const giveTour = () => {
       "z-50",
       "add"
     );
-    changeClass(["about-text", "email-logo"], "bg-white", "add");
+    changeClass(
+      ["about-text", "email-logo", "linkedin-logo", "github-logo"],
+      "bg-white",
+      "add"
+    );
     changeClass(
       ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
       "shadow-md",
@@ -143,7 +206,10 @@ const giveTour = () => {
       ],
       "z-50"
     );
-    changeClass(["about-text", "email-logo"], "bg-white");
+    changeClass(
+      ["about-text", "email-logo", "linkedin-logo", "github-logo"],
+      "bg-white"
+    );
     changeClass(
       ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
       "shadow-md"

@@ -54,7 +54,7 @@
           />
           <div class="flex items-center justify-end h-16">
             <div class="flex items-center">
-              <div class="block">
+              <div class="hidden md:block">
                 <div
                   id="nav-buttons"
                   class="ml-10 flex items-baseline space-x-4"
@@ -129,7 +129,58 @@
                     >Contact</a
                   >
                 </div>
+                
               </div>
+              <!-- Hamburger -->
+              <div class="md:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3 bg-white rounded-md">
+                  <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Hamburger END -->
+              <!-- Hamburger popup -->
+              <div  class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                  <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                          <img
+                          src="./icons/alan-logo.png"
+                          class=" h-10 rounded-full bg-blue-900"
+                        />
+                    </a>
+                    <button class="navbar-close">
+                      <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div>
+                    <ul id='nav-buttons-2'>
+                      <li class="mb-1">
+                        <a id="home-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Home</a>
+                      </li>
+                      <li class="mb-1">
+                        <a id="skills-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Skills</a>
+                      </li>
+                      <li class="mb-1">
+                        <a id="projects-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Projects</a>
+                      </li>
+                      <li class="mb-1">
+                        <a id="about-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >About</a>
+                      </li>
+                      <li class="mb-1">
+                        <a id="contact-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <!-- Hamburger popup end -->
             </div>
           </div>
         </div>
@@ -217,13 +268,17 @@
         </div>
       </div>
 
+
+
+
+
       <!-- Hero END -->
 
       <main>
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <!-- Skills -->
           <div class="max-w-7xl flex flex-col justify-center" id="skills">
-            <div id="skill-word" class="mx-auto my-2">
+            <div id="skill-word" class="mx-auto my-10">
               <p
                 class="
                   text-center text-indigo-600 text-4xl
@@ -238,46 +293,42 @@
             </div>
 
             <div id="skill-icons" class="flex flex-wrap justify-center">
-              <div>
-                <img src="./icons/python-144.png" />
-                <p class="text-center text-gray-500">Python</p>
+              <div class='m-3'>
+                <img src="./icons/python-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">Python</p>
               </div>
-              <div>
-                <img src="./icons/javascript-144.png" />
-                <p class="text-center text-gray-500">Javascript</p>
+              <div class='m-3'>
+                <img src="./icons/javascript-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">Javascript</p>
               </div>
-              <div>
-                <img src="./icons/html-5-144.png" />
-                <p class="text-center text-gray-500">HTML</p>
+              <div class='m-3'>
+                <img src="./icons/html-5-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">HTML</p>
               </div>
-              <div>
-                <img src="./icons/css3-144.png" />
-                <p class="text-center text-gray-500">CSS</p>
+              <div class='m-3'>
+                <img src="./icons/css3-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">CSS</p>
               </div>
-              <div>
-                <img src="./icons/react-144.png" />
-                <p class="text-center text-gray-500">React</p>
+              <div class='m-3'>
+                <img src="./icons/react-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">React</p>
               </div>
-              <div>
-                <img src="./icons/bootstrap-144.png" />
-                <p class="text-center text-gray-500">Bootstrap</p>
+              <div class='m-3'>
+                <img src="./icons/bootstrap-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">Bootstrap</p>
               </div>
-              <div>
-                <img src="./icons/nodejs-144.png" />
-                <p class="text-center text-gray-500">Express/Node.js</p>
+              <div class='m-3'>
+                <img src="./icons/nodejs-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">Express/Node.js</p>
               </div>
 
-              <div>
-                <img src="./icons/mongodb-144.png" />
-                <p class="text-center text-gray-500">MongoDb</p>
+              <div class='m-3'>
+                <img src="./icons/mongodb-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">MongoDb</p>
               </div>
-              <div>
-                <img src="./icons/postgresql-144.png" />
-                <p class="text-center text-gray-500">PostgreSQL</p>
-              </div>
-              <div>
-                <img src="./icons/django-144.png" />
-                <p class="text-center text-gray-500">Django</p>
+              <div class='m-3'>
+                <img src="./icons/postgresql-48.png" class='mx-auto' />
+                <p class="text-center text-gray-500 ">PostgreSQL</p>
               </div>
             </div>
           </div>
@@ -285,7 +336,7 @@
           <!-- Projects -->
           <div class="flex justify-center my-4" id="projects">
             <div class="max-w-7xl flex flex-col" id="projects-container">
-              <div class="mx-auto">
+              <div class="mx-auto my-10">
                 <p
                   class="
                     text-center text-indigo-600 text-4xl
@@ -300,9 +351,9 @@
                 </p>
               </div>
               <div class="container mx-auto">
-                <div class="grid gap-4 md:grid-cols-2 p-4">
+                <div class="grid gap-20 md:grid-cols-2 p-4">
                   <div
-                    id="project-1"
+                    id="project-roberts-art"
                     class="
                       rounded-lg
                       bg-white
@@ -317,7 +368,7 @@
                       Robert's Art
                     </h2>
                     <h2 class="text-xl md:text-2xl text-center">(Freelance)</h2>
-                    <div class="flex justify-center">
+                    <!-- <div class="flex justify-center">
                       <img src="./icons/nodejs-48.png" />
                       <img src="./icons/mongodb-48.png" />
                       <img src="./icons/react-48.png" />
@@ -325,7 +376,7 @@
                       <img src="./icons/javascript-48.png" />
                       <img src="./icons/html-5-48.png" />
                       <img src="./icons/css3-48.png" />
-                    </div>
+                    </div> -->
 
                     <p class="mb-2 text-center">
                       Express/Node | MongoDb | React | Bootstrap | JS | HTML |
@@ -334,9 +385,10 @@
 
                     <p class="mb-2">
                       In Progress - MERN stack e-commerce site built to display
-                      and sell client's art. Uses MongoDb for product
-                      information storage, Stripe for payment processing.
-                      Includes a back-end UI for managing products and sales, as
+                      and sell client's art.
+                    </p>
+                    <p class="mb-2">
+                      Includes an admin UI for managing products and sales, as
                       well as automated email messages to the site owner for
                       each sale.
                     </p>
@@ -361,7 +413,7 @@
                     </div>
                   </div>
                   <div
-                    id="project-2"
+                    id="project-property-manager"
                     class="
                       rounded-lg
                       bg-white
@@ -376,20 +428,23 @@
                       Property Portfolio Manager
                     </h2>
                     <h2 class="text-xl md:text-2xl text-center">(Project)</h2>
-                    <div class="flex justify-center">
+                    <!-- <div class="flex justify-center">
                       <img src="./icons/nodejs-48.png" />
                       <img src="./icons/mongodb-48.png" />
                       <img src="./icons/bootstrap-48.png" />
                       <img src="./icons/javascript-48.png" />
                       <img src="./icons/html-5-48.png" />
                       <img src="./icons/css3-48.png" />
-                    </div>
+                    </div> -->
                     <p class="mb-2 text-center">
                       Express/Node | MongoDb | Bootstrap | JS | HTML | CSS
                     </p>
 
                     <p class="mb-2">
-                      Full CRUD app using MongoDb to manage properties. Built on
+                      App used to keep track of properties you own.
+                    </p>
+                    <p class="mb-2">
+                     Built on
                       Bootstrap with an Express/Node backend, and uses the
                       Google Maps and Places APIs. Includes an auth workflow via
                       Passport and BCrypt, as well as OAuth through Google. Uses
@@ -440,7 +495,7 @@
                   >
                     <div class="h-56 w-full bg-blue-400"></div>
                     <h2 class="text-xl md:text-2xl text-center">
-                      Python ML Project TBD
+                       Project TBD
                     </h2>
                     <h2 class="text-xl md:text-2xl text-center">(Project)</h2>
 
@@ -497,7 +552,7 @@
                     </div>
                   </div>
                   <div
-                    id="project-4"
+                    id="project-chrome-timer"
                     class="
                       rounded-lg
                       bg-white
@@ -509,7 +564,7 @@
                   >
                     <div class="h-56 w-full bg-blue-400"></div>
                     <h2 class="text-xl md:text-2xl text-center">
-                      Anti-Social Media
+                      Pomodoro Timer/Social Media Blocker
                     </h2>
                     <h2 class="text-xl md:text-2xl text-center">
                       (Chrome Extension Project)
@@ -522,10 +577,12 @@
                     </div>
                     <p class="mb-2 text-center">JS | HTML | CSS</p>
                     <p class="mb-2">
-                      A Google Chrome extension I built to help myself keep
-                      productive by blocking common social media websites when
-                      not on a break, as well as timing work sessions using the
-                      Pomodoro technique. Utilizes various Chrome Extension APIs
+                      Google Chrome extension I built to help myself keep
+                      productive by timing working sessions using the Pomodoro technique, and blocking common social media websites when
+                      not on a break.
+                    </p>
+                    <p class="mb-2">
+ Utilizes various Chrome Extension APIs
                     </p>
                     <p class="mb-2 mt-auto">
                       Note: Currently under review to be put on the Chrome Web
@@ -569,7 +626,7 @@
           <!-- Projects END -->
           <!-- About -->
           <div id="about" class="flex flex-col">
-            <div id="about-header" class="mx-auto">
+            <div id="about-header" class="mx-auto my-10">
               <p
                 class="
                   text-center text-indigo-600 text-4xl
@@ -598,7 +655,7 @@
           <!-- About END -->
           <!-- Contact -->
           <div id="contact" class="p-4 flex flex-col">
-            <div id="contact-header" class="mx-auto mb-2">
+            <div id="contact-header" class="mx-auto my-10">
               <p
                 class="
                   text-center text-indigo-600 text-4xl
@@ -611,7 +668,24 @@
                 Contact Me
               </p>
             </div>
-            <div id="contact-form" class="shadow-md bg-white rounded-md p-3">
+            <div id="footer" class="h-24 w-full bg-indigo-400 flex justify-center">
+              <a
+                href="https://github.com/alan-deng"
+                target="_blank"
+                id="github-logo"
+                ><img class="h-full mx-2" src="./icons/github-logo.png"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/alan-f-deng/"
+                target="_blank"
+                id="linkedin-logo"
+                ><img class="h-full mx-2" src="./icons/linkedin-logo.png"
+              /></a>
+              <a href="mailto:alandeng1@gmail.com" id="email-logo"
+                ><img class="h-full mx-2" src="./icons/email-logo.png"
+              /></a>
+            </div>
+            <div id="contact-form" class="shadow-md bg-white rounded-md p-3 mt-5">
               <form
                 id="fs-frm"
                 name="simple-contact-form"
@@ -677,10 +751,6 @@
       </main>
     </div>
     <div id="particles-js"></div>
-    <!-- <canvas class="background"></canvas> -->
-    <!-- <div id="particles-js">
-      <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1903" height="561"></canvas>
-    </div> -->
 
     <script src="particles.js"></script>
     <script src="app.js"></script>
