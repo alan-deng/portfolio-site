@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="alan's portfolio" />
-<meta name="title" property="og:title" content="Alan's Portfolio" />
-<meta property="og:type" content="text/html" />
-<meta name="image" property="og:image" content="https://user-images.githubusercontent.com/32584355/138541667-1204dfa2-2a4f-4459-920b-09078d9becee.png" />
-<meta name="description" property="og:description" content="alan's portfolio" />
-<meta name="author" content="alan-deng" />
+    <meta name="title" property="og:title" content="Alan's Portfolio" />
+    <meta property="og:type" content="text/html" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://user-images.githubusercontent.com/32584355/138541667-1204dfa2-2a4f-4459-920b-09078d9becee.png"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="alan's portfolio"
+    />
+    <meta name="author" content="Alan Deng" />
     <title>Alan's Portfolio</title>
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -35,18 +43,26 @@
     <!-- Tour div for the words on the auto tour  -->
     <div id="tour-container" class="fixed w-full h-16 grid grid-cols-12 hidden">
       <div
-        
-        class="h-16 w-full text-center mx-auto col-start-1 col-end-10 md:col-start-3 md:col-end-10 z-50"
+        class="
+          h-16
+          w-full
+          text-center
+          mx-auto
+          col-start-1 col-end-10
+          md:col-start-3 md:col-end-10
+          z-50
+        "
       >
         <div>
           <p id="tour-text" class="text-base md:text-xl bg-gray-100 h-16">
             Tour not initiated. Click the button!
           </p>
         </div>
-        
       </div>
-      <div  class="text-black col-start-10 col-end-12 md:col-end-11 m-auto">
-        <button id='cancel-button' class='rounded-md bg-white p-2'>Cancel Tour</button>
+      <div class="text-black col-start-10 col-end-12 md:col-end-11 m-auto">
+        <button id="cancel-button" class="rounded-md bg-white p-2">
+          Cancel Tour
+        </button>
       </div>
     </div>
     <!-- Tour div END -->
@@ -135,52 +151,161 @@
                     >Contact</a
                   >
                 </div>
-                
               </div>
               <!-- Hamburger -->
               <div class="md:hidden">
-                <button class="navbar-burger flex items-center text-blue-600 p-3 bg-white rounded-md">
-                  <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <button
+                  class="
+                    navbar-burger
+                    flex
+                    items-center
+                    text-blue-600
+                    p-3
+                    bg-white
+                    rounded-md
+                  "
+                >
+                  <svg
+                    class="block h-4 w-4 fill-current"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <title>Mobile menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    <path
+                      d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                    ></path>
                   </svg>
                 </button>
               </div>
 
               <!-- Hamburger END -->
               <!-- Hamburger popup -->
-              <div  class="navbar-menu relative z-50 hidden">
-                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+              <div class="navbar-menu relative z-50 hidden">
+                <div
+                  class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+                ></div>
+                <nav
+                  class="
+                    fixed
+                    top-0
+                    left-0
+                    bottom-0
+                    flex flex-col
+                    w-5/6
+                    max-w-sm
+                    py-6
+                    px-6
+                    bg-white
+                    border-r
+                    overflow-y-auto
+                  "
+                >
                   <div class="flex items-center mb-8">
                     <a class="mr-auto text-3xl font-bold leading-none" href="#">
-                          <img
-                          src="./icons/alan-logo.png"
-                          class=" h-10 rounded-full bg-blue-900"
-                        />
+                      <img
+                        src="./icons/alan-logo.png"
+                        class="h-10 rounded-full bg-blue-900"
+                      />
                     </a>
                     <button class="navbar-close">
-                      <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                      <svg
+                        class="
+                          h-6
+                          w-6
+                          text-gray-400
+                          cursor-pointer
+                          hover:text-gray-500
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        ></path>
                       </svg>
                     </button>
                   </div>
                   <div>
-                    <ul id='nav-buttons-2'>
+                    <ul id="nav-buttons-2">
                       <li class="mb-1">
-                        <a id="home-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Home</a>
+                        <a
+                          id="home-button2"
+                          class="
+                            block
+                            p-4
+                            text-sm
+                            font-semibold
+                            text-gray-400
+                            hover:bg-blue-50 hover:text-blue-600
+                            rounded
+                          "
+                          >Home</a
+                        >
                       </li>
                       <li class="mb-1">
-                        <a id="skills-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Skills</a>
+                        <a
+                          id="skills-button2"
+                          class="
+                            block
+                            p-4
+                            text-sm
+                            font-semibold
+                            text-gray-400
+                            hover:bg-blue-50 hover:text-blue-600
+                            rounded
+                          "
+                          >Skills</a
+                        >
                       </li>
                       <li class="mb-1">
-                        <a id="projects-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Projects</a>
+                        <a
+                          id="projects-button2"
+                          class="
+                            block
+                            p-4
+                            text-sm
+                            font-semibold
+                            text-gray-400
+                            hover:bg-blue-50 hover:text-blue-600
+                            rounded
+                          "
+                          >Projects</a
+                        >
                       </li>
                       <li class="mb-1">
-                        <a id="about-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >About</a>
+                        <a
+                          id="about-button2"
+                          class="
+                            block
+                            p-4
+                            text-sm
+                            font-semibold
+                            text-gray-400
+                            hover:bg-blue-50 hover:text-blue-600
+                            rounded
+                          "
+                          >About</a
+                        >
                       </li>
                       <li class="mb-1">
-                        <a id="contact-button2" class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" >Contact</a>
+                        <a
+                          id="contact-button2"
+                          class="
+                            block
+                            p-4
+                            text-sm
+                            font-semibold
+                            text-gray-400
+                            hover:bg-blue-50 hover:text-blue-600
+                            rounded
+                          "
+                          >Contact</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -274,10 +399,6 @@
         </div>
       </div>
 
-
-
-
-
       <!-- Hero END -->
 
       <main>
@@ -299,42 +420,42 @@
             </div>
 
             <div id="skill-icons" class="flex flex-wrap justify-center">
-              <div class='m-3'>
-                <img src="./icons/python-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">Python</p>
+              <div class="m-3">
+                <img src="./icons/python-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">Python</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/javascript-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">Javascript</p>
+              <div class="m-3">
+                <img src="./icons/javascript-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">Javascript</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/html-5-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">HTML</p>
+              <div class="m-3">
+                <img src="./icons/html-5-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">HTML</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/css3-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">CSS</p>
+              <div class="m-3">
+                <img src="./icons/css3-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">CSS</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/react-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">React</p>
+              <div class="m-3">
+                <img src="./icons/react-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">React</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/bootstrap-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">Bootstrap</p>
+              <div class="m-3">
+                <img src="./icons/bootstrap-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">Bootstrap</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/nodejs-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">Express/Node.js</p>
+              <div class="m-3">
+                <img src="./icons/nodejs-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">Express/Node.js</p>
               </div>
 
-              <div class='m-3'>
-                <img src="./icons/mongodb-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">MongoDB</p>
+              <div class="m-3">
+                <img src="./icons/mongodb-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">MongoDB</p>
               </div>
-              <div class='m-3'>
-                <img src="./icons/postgresql-48.png" class='mx-auto' />
-                <p class="text-center text-gray-500 ">PostgreSQL</p>
+              <div class="m-3">
+                <img src="./icons/postgresql-48.png" class="mx-auto" />
+                <p class="text-center text-gray-500">PostgreSQL</p>
               </div>
             </div>
           </div>
@@ -450,11 +571,10 @@
                       App used to keep track of properties you own.
                     </p>
                     <p class="mb-2">
-                     Built on
-                      Bootstrap with an Express/Node backend, and uses the
-                      Google Maps and Places APIs. Includes an auth workflow via
-                      Passport and BCrypt, as well as OAuth through Google. Uses
-                      AWS S3 for image uploads.
+                      Built on Bootstrap with an Express/Node backend, and uses
+                      the Google Maps and Places APIs. Includes an auth workflow
+                      via Passport and BCrypt, as well as OAuth through Google.
+                      Uses AWS S3 for image uploads.
                     </p>
 
                     <div class="flex justify-center space-x-5 mt-auto">
@@ -501,7 +621,7 @@
                   >
                     <div class="h-56 w-full bg-blue-400"></div>
                     <h2 class="text-xl md:text-2xl text-center font-bold">
-                       Project TBD
+                      Project TBD
                     </h2>
                     <h2 class="text-xl md:text-2xl text-center">(Project)</h2>
 
@@ -584,12 +704,11 @@
                     <p class="mb-2 text-center">JS | HTML | CSS</p>
                     <p class="mb-2">
                       Google Chrome extension I built to help myself keep
-                      productive by timing working sessions using the Pomodoro technique, and blocking common social media websites when
+                      productive by timing working sessions using the Pomodoro
+                      technique, and blocking common social media websites when
                       not on a break.
                     </p>
-                    <p class="mb-2">
- Utilizes various Chrome Extension APIs
-                    </p>
+                    <p class="mb-2">Utilizes various Chrome Extension APIs</p>
                     <p class="mb-2 mt-auto">
                       Note: Currently under review to be put on the Chrome Web
                       Store
@@ -646,15 +765,17 @@
               </p>
             </div>
             <div id="about-text">
-              <p class="text-2xl md:text-4xl">
+              <p class="text-2xl md:text-4xl p-4">
                 <span id="about-highlight-1"
                   >Product Manager turned software engineer</span
-                >, hoping to use
-                <span id="about-highlight-2">automation</span> to help people
-                effortlessly do what they want. I bring a
-                <span id="about-highlight-3">business-minded</span> approach to
-                addressing user needs, combining user needs with realistic
-                business expectations.
+                >, passionate about
+                <span id="about-highlight-2">automation and efficiency</span>. I
+                want to write programs that allow people to be able to do things
+                as efficiently as possible, with minimal effort. As a product
+                manager I’ve thought about user and business needs, and I want
+                to bring that
+                <span id="about-highlight-3">business-minded approach</span>
+                into my role as a software engineer
               </p>
             </div>
           </div>
@@ -691,7 +812,10 @@
                 ><img class="h-full mx-2" src="./icons/email-logo.png"
               /></a>
             </div>
-            <div id="contact-form" class="shadow-md bg-white rounded-md p-3 mt-5">
+            <div
+              id="contact-form"
+              class="shadow-md bg-white rounded-md p-3 mt-5"
+            >
               <form
                 id="fs-frm"
                 name="simple-contact-form"
