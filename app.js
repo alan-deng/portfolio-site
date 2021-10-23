@@ -11,12 +11,14 @@ const bindNavOnClicks = () => {
     let buttonEl = allButtons[i];
     let elToFind = buttonEl.id.slice(0, buttonEl.id.indexOf("-"));
     let element = document.getElementById(elToFind);
-    buttonEl.addEventListener("click", () =>
-      scrollTo({
-        top: offset(element) - headerOffset,
-        behavior: "smooth",
-      })
-    );
+    if (buttonEl.id !== "resume-button") {
+      buttonEl.addEventListener("click", () =>
+        scrollTo({
+          top: offset(element) - headerOffset,
+          behavior: "smooth",
+        })
+      );
+    }
   }
 };
 bindNavOnClicks();
