@@ -111,7 +111,10 @@ const giveTour = () => {
       ],
       "z-50"
     );
-    changeClass(["about-text", "email-logo"], "bg-white");
+    changeClass(
+      ["about-text", "email-logo", "skill-icons", "hero-text"],
+      "bg-white"
+    );
     changeClass(
       ["about-highlight-1", "about-highlight-2", "about-highlight-3"],
       "shadow-md"
@@ -142,6 +145,7 @@ const giveTour = () => {
     });
     changeClass(["tour-container", "tour-shadow"], "hidden");
     changeClass(["hero-text", "tour-shadow", "tour-container"], "z-50", "add");
+    changeClass(["hero-text"], "bg-white", "add");
     displayText.innerHTML =
       "Welcome to Alan's portfolio tour! Just sit back, and enjoy the show.";
 
@@ -150,8 +154,10 @@ const giveTour = () => {
 
   const showSkills = () => {
     document.getElementById("skills-button").click();
+    changeClass(["hero-text"], "bg-white");
     changeClass(["hero-text"], "z-50");
     changeClass(["skill-word", "skill-icons"], "z-50", "add");
+    changeClass(["skill-icons"], "bg-white", "add");
     displayText.innerHTML = "Here we have skills. So many!";
     currTimeout = setTimeout(showProjects, 10000);
   };
@@ -159,6 +165,7 @@ const giveTour = () => {
   const showProjects = () => {
     document.getElementById("projects-button").click();
     changeClass(["skill-word", "skill-icons"], "z-50");
+    changeClass(["skill-icons"], "bg-white");
     changeClass(["projects-container"], "z-50", "add");
     displayText.innerHTML = `Some projects I've done. We'll come back to this later`;
     currTimeout = setTimeout(showAboutAndContact, 5000);
@@ -228,15 +235,16 @@ const giveTour = () => {
       top: offset(document.getElementById(favProject)) - headerOffset - 5,
       behavior: "smooth",
     });
-    displayText.innerHTML = `This one's my favorite. Let's check it out! <span class="hidden lg:inline"> (If you have popups blocked, the website won't show. Click the link!)</span>`;
-    currTimeout = setTimeout(() => {
-      window.open("https://www.w3schools.com");
-    }, 4000);
+    displayText.innerHTML = `This one's my favorite. Check it out!`;
+    // Currently not going to auto-open project website (still highlighting fav proj for 10 sec)
+    // currTimeout = setTimeout(() => {
+    //   window.open("https://www.w3schools.com");
+    // }, 4000);
     setTimeout(() => {
       changeClass([favProject, "tour-shadow", "tour-container"], "z-50");
       changeClass(["tour-container", "tour-shadow"], "hidden", "add");
       displayText.innerHTML = `Tour not initiated. Click the button!`;
-    }, 10000);
+    }, 5000);
   };
 
   initializeTour();
