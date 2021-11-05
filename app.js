@@ -85,7 +85,7 @@ bindNavOnClicks2();
 //Auto Tour functionality
 const giveTour = () => {
   // When changing project to highlight, change favProject below, and link to favProject at bottom of giveTour
-  const favProject = "project-roberts-art";
+  const favProject = "project-property-manager";
   const displayText = document.getElementById("tour-text");
   let currTimeout;
 
